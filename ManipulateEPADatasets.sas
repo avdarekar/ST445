@@ -6,7 +6,7 @@ Programmed to: reading in and manipulating data sets from EPA
 
 Modified by: Ayesha Darekar
 Modified on: 11/10/21 
-Modified to: continued to work and finish HW7 assignment 
+Modified to: continued to work and finish assignment 
 ;
 
 *use relative paths to create libraries and filerefs;

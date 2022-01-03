@@ -6,7 +6,7 @@ Programmed to: combine multiple datasets and produce a report
 
 Modified by: Ayesha Darekar
 Modified on: 10/25/21 
-Modified to: continued to work and finish HW6 assignment 
+Modified to: continued to work and finish assignment
 ;
 
 *associate filerefs and libraries using relative paths;

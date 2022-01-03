@@ -6,7 +6,7 @@ Programmed to: create a pdf file on Ipums2005Basic dataset
 
 Modified by: Ayesha Darekar
 Modified on: 9/8/2021 
-Modified to: continued to work and finish HW1 assignment 
+Modified to: continued to work and finish assignment 
 ;
 
 *create a library called InputDS using relative paths;

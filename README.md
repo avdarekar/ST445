@@ -1,7 +1,9 @@
 # ST445
+
+## Description
 This repo contains SAS assignments I completed for my ST 445 (Introduction to Statistical Computing and Data Management) course.
 
-# Files Associated with Assignment Codes
+## Files Associated with Assignment Codes
 Ipums2005BasicDataset.sas
 - Ipums2005Basic.sas7bdat.zip
 - HW1 Darekar IPUMS Report.pdf

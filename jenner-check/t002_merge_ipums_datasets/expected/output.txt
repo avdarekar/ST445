@@ -1,0 +1,169 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: hw6.hw6darekaripums2005
+Observations:  6
+Variables:     12
+
+Variables (in creation order):
+
+  #  Variable    Type    Len  Format     Label
+---  ----------  ----  -----  ---------  -----------------------------
+  1  CountyFIPS  Char      3             County FIPS Code
+  2  MetroDesc   Char     32             Metro Status Description
+  3  State       Char     20             State, District, or Territory
+  4  City        Char     40             City Name
+  5  MortStat    Char     45             Mortgage Status
+  6  Ownership   Char      6             Ownership Status
+  7  Serial       Num      8             Household Serial Number
+  8  Metro        Num      8             Metro Status Code
+  9  MortPay      Num      8  DOLLAR6.   Monthly Mortgage Payment
+ 10  HHI          Num      8  DOLLAR10.  Household Income
+ 11  HomeVal      Num      8  DOLLAR10.  Home Value
+ 12  citypop      Num      8  COMMA6.    City Population (in 100s)
+
+-------------------------------------------------------------------------------
+
+                                 Listing of Households in NC with Incomes Over $500,000
+
+City Name                                 Metro Status Code  Mortgage Status                                Household Income  Home Value
+otte                                                      4  Yes, mortgaged/ deed of trust or similar debt          $612,000  $1,340,000
+                                                The UNIVARIATE Procedure
+                                     Variable:  MortPay  (Monthly Mortgage Payment)
+           Basic Statistical Measures            
+
+Location            Variability                  
+--------  --------  -------------  --------------
+Mean        $1,683  Std Deviation          $2,063
+Median      $1,385  Variance       4254746.666667
+Mode            $0  Range                  $5,610
+
+Quantiles (Definition 5)
+
+Quantile    Estimate
+----------  --------
+0% Min            $0
+1%                $0
+5%                $0
+10%               $0
+25% Q1            $0
+50% Median    $1,385
+75% Q3        $1,720
+90%           $5,610
+95%           $5,610
+99%           $5,610
+100% Max      $5,610
+
+         Extreme Observations         
+
+Lowest              Highest           
+--------  --------  --------  --------
+Value           $0  Value           $0
+Value           $0  Value       $1,320
+Value       $1,320  Value       $1,450
+Value       $1,450  Value       $1,720
+Value       $1,720  Value       $5,610
+
+
+                                                The UNIVARIATE Procedure
+                                           Variable:  HHI  (Household Income)
+             Basic Statistical Measures              
+
+Location            Variability                      
+--------  --------  -------------  ------------------
+Mean      $243,900  Std Deviation            $180,363
+Median    $171,550  Variance       32530856000.000000
+Mode             .  Range                    $446,500
+
+Quantiles (Definition 5)
+
+Quantile    Estimate
+----------  --------
+0% Min      $165,500
+1%          $165,500
+5%          $165,500
+10%         $165,500
+25% Q1      $168,000
+50% Median  $171,550
+75% Q3      $174,800
+90%         $612,000
+95%         $612,000
+99%         $612,000
+100% Max    $612,000
+
+         Extreme Observations         
+
+Lowest              Highest           
+--------  --------  --------  --------
+Value     $165,500  Value     $168,000
+Value     $168,000  Value     $169,900
+Value     $169,900  Value     $173,200
+Value     $173,200  Value     $174,800
+Value     $174,800  Value     $612,000
+
+
+                                                The UNIVARIATE Procedure
+                                            Variable:  HomeVal  (Home Value)
+              Basic Statistical Measures              
+
+Location            Variability                       
+--------  --------  -------------  -------------------
+Mean      $434,500  Std Deviation             $459,684
+Median    $292,500  Variance       211309500000.000000
+Mode             .  Range                   $1,248,000
+
+Quantiles (Definition 5)
+
+Quantile      Estimate
+----------  ----------
+0% Min         $92,000
+1%             $92,000
+5%             $92,000
+10%            $92,000
+25% Q1        $180,000
+50% Median    $292,500
+75% Q3        $410,000
+90%         $1,340,000
+95%         $1,340,000
+99%         $1,340,000
+100% Max    $1,340,000
+
+          Extreme Observations          
+
+Lowest              Highest             
+--------  --------  --------  ----------
+Value      $92,000  Value       $180,000
+Value     $180,000  Value       $210,000
+Value     $210,000  Value       $375,000
+Value     $375,000  Value       $410,000
+Value     $410,000  Value     $1,340,000
+
+                                            Distribution of City Population
+                                         (For Households in a Recognized City)
+
+
+Recognized cities have a non-zero value for City Population
+                             Distribution of Household Income Stratified by Mortgage Status
+
+PROC SGPANEL Output
+Data: HW6.hw6darekaripums2005
+
+Variables: CountyFIPS, MetroDesc, State, City, MortStat, Ownership, Serial, Metro, MortPay, HHI, HomeVal, citypop
+
+CountyFIPS   MetroDesc       State        City    MortStat   Ownership      Serial       Metro     MortPay         HHI     HomeVal     citypop
+----------  ----------  ----------  ----------  ----------  ----------  ----------  ----------  ----------  ----------  ----------  ----------
+       183  In Central/Principal City  North Carolina          gh  Yes, contract to purchase       Owned        1001           2        1450      168000      210000           .
+       119  Central/Principal Indeterminable  North Carolina        otte  Yes, mortgaged/ deed of trust or similar debt       Owned        1002           4        5610      612000     1340000           .
+       079  In Central/Principal City  South Carolina         bia  Yes, contract to purchase       Owned        1003           2        1320      169900      180000           .
+       045  In Central/Principal City  South Carolina       ville  No, owned free and clear       Owned        1004           2           0      165500       92000           .
+       063  Central/Principal Indeterminable  North Carolina           m  Yes, mortgaged/ deed of trust or similar debt       Owned        1005           4        1720      174800      375000           .
+       019  Central/Principal Indeterminable  South Carolina       eston  No, owned free and clear       Owned        1006           4           0      173200      410000           .
+
+Serial: N=6, Min=1001.0000, Max=1006.0000, Mean=1003.5000, Sum=6021.0000
+Metro: N=6, Min=2.0000, Max=4.0000, Mean=3.0000, Sum=18.0000
+MortPay: N=6, Min=0.0000, Max=5610.0000, Mean=1683.3333, Sum=10100.0000
+HHI: N=6, Min=165500.0000, Max=612000.0000, Mean=243900.0000, Sum=1463400.0000
+HomeVal: N=6, Min=92000.0000, Max=1340000.0000, Mean=434500.0000, Sum=2607000.0000
+
+Kernel estimate parameters were determined automatically.

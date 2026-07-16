@@ -1,0 +1,57 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library INPUTDS assigned path=/tmp/work/r_f6f131a9e7ef48599876badf290be334/work/8c48eb19-b02a-4d15-a7a3-000d52827e44.
+NOTE: Library HW1 assigned path=/tmp/work/r_f6f131a9e7ef48599876badf290be334/work/8c48eb19-b02a-4d15-a7a3-000d52827e44.
+NOTE: DATA InputDS.Ipums2005Basic
+
+NOTE: Processing inline DATALINES (15 lines)
+
+NOTE: Read 15 rows from DATALINES.
+NOTE: Wrote InputDS.Ipums2005Basic (15 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to Descriptor Information Before Sorting.
+NOTE: PROC CONTENTS data=InputDS.Ipums2005Basic
+
+NOTE: PROC CONTENTS completed: 15 observations, 8 variables
+NOTE: PROC SORT data=InputDS.Ipums2005Basic
+
+NOTE: Read 15 rows from InputDS.Ipums2005Basic.
+NOTE: Wrote HW1.Ipums2005sort (15 rows, 8 columns).
+NOTE: PROC SORT statement used.
+NOTE: Option TITLE changed to Descriptor Information After Sorting.
+NOTE: PROC CONTENTS data=HW1.Ipums2005sort
+
+NOTE: PROC CONTENTS completed: 15 observations, 8 variables
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT homeval defined (5 ranges).
+NOTE: FORMAT $cityval defined (1 ranges).
+NOTE: Option TITLE changed to Listing of Payments, Income, and Home Value.
+NOTE: Option TITLE2 changed to Including Ownership and State within Ownership Totals.
+NOTE: Option FOOTNOTE1 changed to Only for North and South Carolina.
+NOTE: Option FOOTNOTE2 changed to Only for Metro values of 2 and 4.
+NOTE: Option FOOTNOTE3 changed to Only for households with income between $165,000 and $175,000 (inclusive).
+NOTE: Option FOOTNOTE4 changed to Tier 1 = Up to $95,000, Tier 2 = Up to $162,500, Tier 3 = Up to $350,000, Tier 4 = Up to $1,000,000,.
+NOTE: Option FOOTNOTE5 changed to NA = $9,999,999.
+NOTE: PROC PRINT data=HW1.Ipums2005sort
+
+NOTE: PROC PRINT completed: 15 observations printed, 8 variables
+NOTE: Option TITLE changed to Selected Numerical Summaries of US Census IPUMS Data.
+NOTE: Option TITLE2 changed to by Ownership and Home Value Classification.
+NOTE: Option FOOTNOTE changed to Excluding Alaska and Hawaii.
+NOTE: Option FOOTNOTE2 changed to Tier 1 = Up to $95,000, Tier 2 = Up to $162,500, Tier 3 = Up to $350,000, Tier 4 = Up to $1,000,000,.
+NOTE: Option FOOTNOTE3 changed to NA = $9,999,999.
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: Option TITLE changed to Total Population by Ownership and Ownership by Metro.
+NOTE: Option TITLE2 changed to and Ownership by Home Value Classification.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_ownership.spec.json
+NOTE: ODS plot written: freq_mosaic_ownership_metro.spec.json
+NOTE: ODS plot written: freq_mosaic_ownership_home_value.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: ODS PDF: rendering images at 150 DPI.
+NOTE: ODS PDF: wrote report to /tmp/work/r_f6f131a9e7ef48599876badf290be334/HW1 Darekar IPUMS Report.pdf.

@@ -1,0 +1,40 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: HW7.hw7darekarfinal
+Observations:  100
+Variables:     25
+
+Variables (in creation order):
+
+  #  Variable      Type    Len  Format  Label
+---  ------------  ----  -----  ------  ----------------------------------------
+  1  parameter     Char     50          AQS Parameter Name
+  2  aqsabb        Char      4          AQS Parameter Abbreviation
+  3  aqsdesc       Char     40          AQS Measurement Description
+  4  mode          Char     50          Measurement Mode
+  5  collectdescr  Char     50          Description of Collection Process
+  6  analysis      Char     50          Analysis Technique
+  7  localName     Char     50          Site Name
+  8  stabbrev      Char     50          State Abbreviation
+  9  countyname    Char     50          County Name
+ 10  cityname      Char     50          City Name
+ 11  siteid         Num      8          Site ID
+ 12  aqscode        Num      8          AQS Parameter Code
+ 13  poc            Num      8          Parameter Occurance Code (Instrument Number within Site and Parameter)
+ 14  date           Num      8          Observation Date
+ 15  aqs            Num      8          AQS Observed Value
+ 16  aqi            Num      8          Daily Air Quality Index Value
+ 17  count          Num      8          Daily AQS Observations
+ 18  _day          Char    200          NAME OF FORMER VARIABLE
+ 19  lat            Num      8          Site Latitude
+ 20  long           Num      8          Site Longitude
+ 21  mdl            Num      8          Federal Method Detection Limit
+ 22  estabdate      Num      8          Site Established Date
+ 23  closedate      Num      8          Site Closed Date
+ 24  aqidesc       Char    200          Daily AQI Category
+ 25  percent        Num      8          Percent of AQS Observations (100*Observed/24)
+
+-------------------------------------------------------------------------------
+

@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-16T17:45:00Z",
+  "_captured_run_id": "r_f6f131a9e7ef48599876badf290be334",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote InputDS.Ipums2005Basic (15 rows, 8 columns).",
+    "NOTE: PROC CONTENTS completed: 15 observations, 8 variables",
+    "NOTE: Wrote HW1.Ipums2005sort (15 rows, 8 columns).",
+    "NOTE: FORMAT homeval defined (5 ranges).",
+    "NOTE: PROC SORT statement used."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

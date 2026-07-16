@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-16T17:20:00Z",
+  "_captured_run_id": "r_4be530a1bbc7427e9e8c1fae392e781e",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote HW7.EPAData2 (100 rows, 8 columns).",
+    "NOTE: Wrote HW7.concat (100 rows, 12 columns).",
+    "NOTE: Wrote HW7.HW7DarekarFinal (100 rows, 25 columns).",
+    "NOTE: PROC CONTENTS completed: 100 observations, 25 variables",
+    "NOTE: PROC COMPARE base=HW7.hw7dugginsfinal compare=HW7.hw7darekarfinal"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

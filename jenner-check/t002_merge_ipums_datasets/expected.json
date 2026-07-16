@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-16T17:05:00Z",
+  "_captured_run_id": "r_237372d4fcb54c2a805c5e5a8899cdfc",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote HW6.concatenate (8 rows, 8 columns).",
+    "NOTE: Wrote HW6.HW6DarekarIpums2005 (6 rows, 12 columns).",
+    "NOTE: PROC COMPARE base=HW6.hw6dugginsipums2005 compare=HW6.hw6darekaripums2005",
+    "NOTE: PROC CONTENTS completed: 6 observations, 12 variables",
+    "NOTE: ODS PDF: wrote report to"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
